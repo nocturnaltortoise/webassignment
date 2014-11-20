@@ -65,12 +65,32 @@ table {
 
 .navbar a{
 
-	color: white;
+	color: #8F9496;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.25em;
 	font-family: sans-serif;
 	padding: 0.75em, 0, 0.75em, 0;
+}	
+
+.navbar{
+
+	background-color: #2D2D2E;
+	margin: 0px 0px 0px 0px;
+	border-top: 10px solid #1793D0;
+	padding: 1em;
+}
+
+.navbar a:hover{
+
+	color: white;
+
+}
+
+.navbar a:visited{
+
+	color: #1793D0;
+
 }
 
 h1.pageheader{
@@ -87,27 +107,6 @@ img.pageheader{
 
 	float: right;
 	padding-right: 10%;
-
-}	
-
-.navbar{
-
-	background-color: #2D2D2E;
-	margin: 10px 0px 0px 0px;
-	box-shadow: 0px -10px #D96500;
-	padding: 1em;
-}
-
-.navbar a:hover{
-
-	color: #F09F59;
-	background-color: #505052;
-
-}
-
-.navbar a:visited{
-
-	color: #D96500;
 
 }
 
