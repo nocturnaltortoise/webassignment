@@ -1,70 +1,23 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+.navbar{
+	background-color: #2D2D2E;
 	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	border-top: 10px solid #1793D0;
+	padding: 1em;
+	clear: both;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*end of css reset */
 
 .navbar ul li{
-
 	list-style-type: none;
 	display: inline;
 	padding-right: 5%;
-
 }
 
 .navbar ul{
-
 	padding-left: 5%;
-
+	margin: 0;
 }
 
 .navbar a{
-
 	color: #8F9496;
 	text-decoration: none;
 	font-weight: bold;
@@ -73,89 +26,108 @@ table {
 	padding: 0.75em, 0, 0.75em, 0;
 }	
 
-.navbar{
-
-	background-color: #2D2D2E;
-	margin: 0px 0px 0px 0px;
-	border-top: 10px solid #1793D0;
-	padding: 1em;
-}
-
 .navbar a:hover{
-
 	color: white;
-
 }
 
-.navbar a:visited{
-
+a.currentPage{
 	color: #1793D0;
-
 }
 
-h1.pageheader{
-
-	font-weight: bold;
-	font-size: 4em;
-	padding: 5% 0% 0% 15%;
-	display: inline-block;
-	font-family: sans-serif;
-
-}
-
-img.pageheader{
-
-	float: right;
-	padding-right: 10%;
-
-}
-
-
-.mainwrapper{
-
+.pageHeader{
 	background-color: #5F5F63;
-	height: 300px;
-	
+	padding: 10px;
 }
 
-.content p{
-
-	height: 320px;
-	padding-top: 50px;
-	margin: 0 0 0 0;
-	padding-right: 20px;
-
+.logo{
+	display: inline-block;
 }
 
-.content img{
-
-	width: 300px;
-	padding-right: 20px;
-	padding-left: 50px;
-	padding-top: 30px;
-	margin: 0 0 0 0;
-	float: left;
+.logo img{
+	float:right;
+	max-width: 50%;
+	margin: 0;
 }
 
 .content{
+	background-color: #F5F5F5;
 	margin: 0 auto;
 	width: 80%;
-	background-color: #F5F5F5;
+	padding: 10px;
+}
+
+.threeColumn{
+	width: 95%;
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: center;
+}
+
+.threeColumn img{
+	display: inline-block;
+	padding: 10px;
+	width: 30%;
+}
+
+.threeColumn p{
+	display: inline-block;
+	padding: 10px;
+	width: 30%;
+	text-align: center;
+}
+
+.singleRow{
+	display: inline;
+}
+
+.singleRow img{
+	width: 30%;
+	padding: 10px;
+	max-height: 200px;
+}
+
+.singleRow h3{
+	padding-left: 10px;
+	font-size: 2em;
+}
+
+.singleRow h4{
+	padding-left: 10px;
+	margin: 0;
+}
+
+.singleRow p{
+	width: 65%;
+	float: right;
+	padding: 10px;
 
 }
 
-footer{
-
+.pageFooter{
 	margin: 0 auto 50px auto;
 	width: 80%;
 	background-color: #F09F59;
-
+	clear: both;
+	padding: 0 10px 0 10px;
 }
 
-footer h3{
+.pageFooter ul li{
+	list-style-type: none;
+	display: inline;
+	padding-right: 5%;
+}
 
+.pageFooter ul{
+	padding:3% 0 3% 15%;
+	margin: 0;
+}
+
+.pageFooter a{
 	color: white;
-	text-align: center;
-	font-size: 1.2em;
-	padding: 10px;
+	text-decoration: none;
+	font-family: sans-serif;
 }
+
+.pageFooter li:last-child{
+	float:right;
+}	

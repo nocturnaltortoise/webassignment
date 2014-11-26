@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!--[if lt IE 9]>
+    		<script src="html5shiv.js"></script>
+		<![endif]-->
 		<meta charset="utf-8">
 		<title>Simontech Web Development | Homepage</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
 
 	<body>
 
+		<div class = "pageHeader">
+			<div class="logo">
+				<img src="images/logo.png" alt="Company logo"/>
+			</div>
+		</div>
+		
+
 		<nav class = "navbar">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a class="currentPage" href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="demo.html">Demo</a></li>
-				<li><a href="accessibility.html">Accessibility</a></li>
+				
 			</ul>
 		</nav>
+		
 
-		<div class = "mainwrapper">
+		<div class = "content">
+			<div class = "threeColumn">
+				<img src = "images/image1.jpg" alt=""/>
+				<img src = "images/image1.jpg" alt=""/>
+				<img src = "images/image1.jpg" alt=""/>
+			</div>
 
-			<h1 class = "pageheader">Simontech Web Development</h1>
-			<img class = "pageheader" src="images/logo.png" alt="Company logo"/>
+			<div class = "threeColumn">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna urna. Quisque nec ex et lacus aliquet porttitor ut id risus. Fusce purus libero, fermentum eget erat in, venenatis sagittis justo.
+				</p>
 
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna urna. Quisque nec ex et lacus aliquet porttitor ut id risus. Fusce purus libero, fermentum eget erat in, venenatis sagittis justo. 
+				</p>
+
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna urna. Quisque nec ex et lacus aliquet porttitor ut id risus. Fusce purus libero, fermentum eget erat in, venenatis sagittis justo. 
+				</p>
+			</div>
 		</div>
 
-
-			<div class = "content">
-				<img src = "images/image1.jpg"/>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna urna. Quisque nec ex et lacus aliquet porttitor ut id risus. Fusce purus libero, fermentum eget erat in, venenatis sagittis justo. Aenean et tellus convallis, porttitor mi at, consequat mi. Donec ut posuere dolor, at aliquam augue. Sed nisl eros, ornare at hendrerit tristique, condimentum vitae arcu. Quisque dui ligula, feugiat in cursus ut, finibus sed risus. Nunc feugiat est ac neque iaculis, quis egestas lacus fringilla. In euismod nisl in ipsum placerat, in cursus sem placerat. Nam scelerisque, nisl auctor pharetra ullamcorper, enim est condimentum urna, sed gravida massa erat in urna. Suspendisse sit amet ipsum nibh. Sed mollis mi risus, vehicula molestie urna porta eget. Integer condimentum, nisl nec vestibulum commodo, lorem magna fringilla turpis, vitae aliquam nisi libero bibendum diam. Sed elit nibh, vestibulum nec metus ac, faucibus iaculis purus. Mauris in euismod nibh. 
-				</p>
-			</div>
+		<footer class="pageFooter">
 			
-			<div class = "content">
-				<img src = "images/image2.jpg"/>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna urna. Quisque nec ex et lacus aliquet porttitor ut id risus. Fusce purus libero, fermentum eget erat in, venenatis sagittis justo. Aenean et tellus convallis, porttitor mi at, consequat mi. Donec ut posuere dolor, at aliquam augue. Sed nisl eros, ornare at hendrerit tristique, condimentum vitae arcu. Quisque dui ligula, feugiat in cursus ut, finibus sed risus. Nunc feugiat est ac neque iaculis, quis egestas lacus fringilla. In euismod nisl in ipsum placerat, in cursus sem placerat. Nam scelerisque, nisl auctor pharetra ullamcorper, enim est condimentum urna, sed gravida massa erat in urna. Suspendisse sit amet ipsum nibh. Sed mollis mi risus, vehicula molestie urna porta eget. Integer condimentum, nisl nec vestibulum commodo, lorem magna fringilla turpis, vitae aliquam nisi libero bibendum diam. Sed elit nibh, vestibulum nec metus ac, faucibus iaculis purus. Mauris in euismod nibh. 
-				</p>
-			</div>
-
-			<div class = "content">
-				<img src = "images/image3.jpg"/>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et magna urna. Quisque nec ex et lacus aliquet porttitor ut id risus. Fusce purus libero, fermentum eget erat in, venenatis sagittis justo. Aenean et tellus convallis, porttitor mi at, consequat mi. Donec ut posuere dolor, at aliquam augue. Sed nisl eros, ornare at hendrerit tristique, condimentum vitae arcu. Quisque dui ligula, feugiat in cursus ut, finibus sed risus. Nunc feugiat est ac neque iaculis, quis egestas lacus fringilla. In euismod nisl in ipsum placerat, in cursus sem placerat. Nam scelerisque, nisl auctor pharetra ullamcorper, enim est condimentum urna, sed gravida massa erat in urna. Suspendisse sit amet ipsum nibh. Sed mollis mi risus, vehicula molestie urna porta eget. Integer condimentum, nisl nec vestibulum commodo, lorem magna fringilla turpis, vitae aliquam nisi libero bibendum diam. Sed elit nibh, vestibulum nec metus ac, faucibus iaculis purus. Mauris in euismod nibh. 
-				</p>
-			</div>
-
-		<footer>
-
-			<h3>Copyright Simon Turner 2014</h3>
+			<ul>
+				<li><a href="accessibility.html">Accessibility</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li>Copyright &copy2014 Simontech</li>
+			</ul>
 
 		</footer>
 
