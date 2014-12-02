@@ -97,12 +97,49 @@ article header{
 	border-bottom: solid 2px gray;
 }
 
+.contactForm{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.contactForm label{
+	margin: 10px;
+}
+
+.contactForm input, .contactForm textarea{
+	display: block;
+	clear: right;
+	margin: 10px;
+}
+
+#fromName{
+	width: 200px;
+}
+
+#fromEmail{
+	width: 300px;
+}
+
+#formMessage{
+	width: 600px;
+	height: 400px;
+}
+
+#formSubmit, #formReset{
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+}
+
 .singleRow p{
 	width: 65%;
 	float: right;
 	margin: 0;
 	padding: 10px;
+}
 
+.singleRow{
+	margin: 0 auto;
 }
 
 .pageFooter{
