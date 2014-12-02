@@ -30,18 +30,22 @@
 
 		<div class="content">
 
+
+
 			<div class="contactForm">
 				<form name="contactForm" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get">
 				<input type="hidden" name="recipient" value="STurner4@sheffield.ac.uk"/>
-				<label for="fromName">Name: </label>
-				<input type="text" name="Name" id="fromName" maxlength="40" size="20" required/>
-				<label for="fromEmail">Email: </label>
-				<input type="email" name="Email" id="fromEmail" maxlength="40" size="20" required/>
-				<label for="message">Your Message: </label>
-				<textarea name="Message" id="formMessage" required></textarea>
+				<label for="fromName">Name: <span class="requiredSymbol">*</span></label>
+				<input type="text" name="fromName" id="fromName" maxlength="40" size="20" required/>
+				<label for="fromEmail">Email: <span class="requiredSymbol">*</span></label>
+				<input type="email" name="fromEmail" id="fromEmail" maxlength="40" size="20" required/>
+				<label for="message">Your Message: <span class="requiredSymbol">*</span></label>
+				<textarea name="message" id="message" required></textarea>
 
 				<input type="submit" name="formSubmit" id="formSubmit" value="submit"/>
 				<input type="reset" id="formReset" value="reset"/>
+
+				<p><span class="requiredSymbol">*</span> Indicates a required field. </p>
 			</div>
 
 		</div>
