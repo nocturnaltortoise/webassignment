@@ -129,26 +129,6 @@ a.currentPage{
 	font-size: 2em;
 }
 
-/*.articleHeading{
-	padding-left: 10px;
-	margin: 0;
-	clear: right;
-	display: block;
-	border-bottom: solid 2px gray;
-}
-
-.articleHeading h2{
-	float: left;
-	display: inline;
-	padding: 10px;
-}
-
-.articleHeading h3{
-	float: right;
-	display: inline;
-	padding: 10px;
-}*/
-
 aside.monthSelector{
 	float: right;
 	display: inline-block;
@@ -226,7 +206,13 @@ aside.monthSelector ul{
 	color: red;
 }
 
-
+#demoCanvas{
+	width: 640px;
+	height: 480px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	display: block;
+}
 
 .pageFooter{
 	background-color: #F09F59;
