@@ -20,9 +20,9 @@
 .navbar a{
 	color: #8F9496;
 	text-decoration: none;
-	font-weight: bold;
 	font-size: 1.25em;
-	font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
 	padding: 0.75em 0 0.75em 0;
 }
 
@@ -36,32 +36,59 @@ a.currentPage{
 
 .pageHeader{
 	background-color: #5F5F63;
-	padding: 10px;
 }
 
 .logo{
 	display: inline-block;
+	margin-left: 5%;
 }
 
 .logo img{
-	float:right;
 	max-width: 50%;
-	margin: 0;
 }
 
 .content{
 	background-color: #F5F5F5;
 	margin: 50px auto;
-	width: 80%;
-	padding: 10px;
+	width: 85%;
+	padding: 20px;
 	border: 1px solid #ccc;
-	font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
-	/*box-shadow: 3px 3px 5px rgba(0,0,0,0.2);*/
+	font-family: 'Arvo', serif;
 }
 
 .content img{
 	border: solid 3px #ccc;
 	margin: 10px;
+}
+
+.content h1{
+	padding-left: 10px;
+	font-size: 2em;
+}
+
+.content li{
+	list-style: none;
+	margin: 50px 0;
+}
+
+.content a{
+	text-decoration: none;
+	padding: 10px;
+	color: #ccc;
+}
+
+.content p{
+	padding: 0 10px;
+}
+
+.content a:visited{
+	color: #F09F59;
+}
+
+.key{
+	background-image: url(images/gradient.png);
+	margin: 50px 0;
+	padding: 10px;
 }
 
 .threeColumn{
@@ -85,12 +112,12 @@ a.currentPage{
 
 .singleRow{
 	display: inline-block;
+	width: 100%;
 }
 
 .singleRow p{
 	width: 65%;
 	float: right;
-	padding: 10px 0;
 }
 
 .singleRow img{
@@ -100,33 +127,26 @@ a.currentPage{
 }
 
 .singleRow h2{
-	float: left;
 	margin-left: 10px;
+	float: left;
 }
 
 .singleRow h3{
-	float: right;
 	min-width: 250px;
 	margin-left: 10px;
+	float: right;
 }
 
 .dayAndMonth{
 	background-color: #8F9496;
-	border: 1px solid #ccc;
 	padding: 0.5em;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 
 .year{
 	background-color: #F09F59;
-	border: 1px solid #ccc;
 	padding: 0.5em;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-}
-
-.content h1{
-	padding-left: 10px;
-	font-size: 2em;
 }
 
 aside.monthSelector{
@@ -194,8 +214,8 @@ aside.monthSelector ul{
 }
 
 #message{
-	width: 600px;
-	height: 400px;
+	width: 500px;
+	height: 200px;
 }
 
 #formSubmit, #formReset{
@@ -219,7 +239,7 @@ aside.monthSelector ul{
 	clear: both;
 	padding: 0 10px 0 10px;
 	margin-top: 50px;
-	font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .pageFooter ul li{
@@ -237,7 +257,6 @@ aside.monthSelector ul{
 .pageFooter a{
 	color: #fff;
 	text-decoration: none;
-	font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
 }
 
 .pageFooter li:last-child{

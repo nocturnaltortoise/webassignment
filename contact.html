@@ -5,8 +5,10 @@
     		<script src="html5shiv.js"></script>
 		<![endif]-->
 		<meta charset="utf-8">
-		<title>Simontech Web Development | Homepage</title>
+		<title>Contact | Nocturnal Web Development</title>
 		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
 
@@ -20,27 +22,25 @@
 
 		<nav class = "navbar">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="demo.html">Demo</a></li>
+				<li><a href="index.html" accesskey="1">HOME</a></li>
+				<li><a href="about.html" accesskey="2">ABOUT</a></li>
+				<li><a href="news.html" accesskey="3">NEWS</a></li>
+				<li><a href="demo.html" accesskey="4">DEMO</a></li>
 				
 			</ul>
 		</nav>
 
 		<div class="content">
 
-
-
 			<div class="contactForm">
 				<form name="contactForm" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get">
 				<input type="hidden" name="recipient" value="STurner4@sheffield.ac.uk"/>
 				<label for="fromName">Name: <span class="requiredSymbol">*</span></label>
-				<input type="text" name="fromName" id="fromName" maxlength="40" size="20" required/>
+				<input type="text" name="fromName" id="fromName" maxlength="40" size="20" placeholder="Enter your name..."required/>
 				<label for="fromEmail">Email: <span class="requiredSymbol">*</span></label>
-				<input type="email" name="fromEmail" id="fromEmail" maxlength="40" size="20" required/>
+				<input type="email" name="fromEmail" id="fromEmail" maxlength="40" size="20" placeholder="Enter your email..."required/>
 				<label for="message">Your Message: <span class="requiredSymbol">*</span></label>
-				<textarea name="message" id="message" required></textarea>
+				<textarea name="message" id="message" placeholder="Enter your message..." required></textarea>
 
 				<input type="submit" name="formSubmit" id="formSubmit" value="submit"/>
 				<input type="reset" id="formReset" value="reset"/>
@@ -53,9 +53,9 @@
 		<footer class="pageFooter">
 			
 			<ul>
-				<li><a href="accessibility.html">Accessibility</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li>Copyright &copy;2014 Simontech</li>
+				<li><a href="accessibility.html" accesskey="0">Accessibility</a></li>
+				<li><a href="contact.html" accesskey="c">Contact</a></li>
+				<li>Copyright &copy;2014 NOCTURNAL WEB DEVELOPMENT</li>
 			</ul>
 
 		</footer>
