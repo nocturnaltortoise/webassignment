@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+
 .navbar{
 	background-color: #2D2D2E;
 	margin: 0;
@@ -51,14 +54,16 @@ a.currentPage{
 	background-color: #F5F5F5;
 	margin: 50px auto;
 	width: 80%;
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid #ccc;
 	font-family: 'Arvo', serif;
 }
 
 .content img{
 	border: solid 3px #ccc;
-	margin: 10px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #fff;
 }
 
 .content h1{
@@ -87,13 +92,16 @@ a.currentPage{
 
 .key{
 	background-image: url(images/gradient.png);
+	background: linear-gradient(left, #1793D0, #106693);
+	background: -moz-linear-gradient(left, #1793D0, #106693);
+	background: -webkit-linear-gradient(left, #1793D0, #106693);
+	background: -o-linear-gradient(left, #1793D0, #106693);
+	
 	margin: 50px 0;
 	padding: 10px;
 }
 
 .threeColumn{
-	width: 95%;
-	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 }
@@ -101,6 +109,7 @@ a.currentPage{
 .threeColumn img{
 	display: inline-block;
 	width: 30%;
+	height: 200px;
 }
 
 .threeColumn p{
@@ -156,7 +165,6 @@ aside.monthSelector{
 	margin: 50px 10px 10px 10px; 
 	border: solid 1px #ccc;
 	font-family: 'Arvo', serif;
-	text-align: center;
 }
 
 aside.monthSelector a{
@@ -279,6 +287,7 @@ aside.monthSelector ul{
 	height: 480px;
 	margin: 10px auto;
 	display: block;
+	background-color: #fff;
 
 }
 
