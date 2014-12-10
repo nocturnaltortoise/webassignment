@@ -50,7 +50,7 @@ a.currentPage{
 .content{
 	background-color: #F5F5F5;
 	margin: 50px auto;
-	width: 85%;
+	width: 80%;
 	padding: 20px;
 	border: 1px solid #ccc;
 	font-family: 'Arvo', serif;
@@ -152,21 +152,27 @@ a.currentPage{
 aside.monthSelector{
 	float: right;
 	display: inline-block;
-	background-color: #F5F5F5;
+	background-color: #2D2D2E;
 	margin: 50px 10px 10px 10px; 
 	border: solid 1px #ccc;
-	font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', serif;
+	font-family: 'Arvo', serif;
 	text-align: center;
 }
 
 aside.monthSelector a{
 	text-decoration: none;
 	color: #8F9496;
+}
 
+aside.monthSelector h1{
+	font-size: 1.2em;
+	padding: 10px;
+	background-color: #F09F59;
+	margin: 0;
 }
 
 aside.monthSelector a:hover{
-	color: #000;
+	color: #fff;
 }
 
 aside.monthSelector li{
@@ -180,7 +186,7 @@ aside.monthSelector ul{
 
 #wrapper{
 	margin: 0px auto;
-	width: 90%;
+	width: 95%;
 }
 
 #wrapper .content{
@@ -196,10 +202,29 @@ aside.monthSelector ul{
 .contactForm{
 	width: 600px;
 	margin: 0 auto;
+	background-color: #2D2D2E;
+	padding: 10px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.formHeader h1{
+	width: 600px;
+	margin: 0 auto;
+	background-color: #F09F59;
+	padding: 10px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
 }
 
 .contactForm label{
 	margin: 10px;
+	display: inline-block;
+	color: #fff;
+}
+
+.contactForm p{
+	color: #fff;
 }
 
 .contactForm input, .contactForm textarea{
@@ -207,6 +232,7 @@ aside.monthSelector ul{
 	clear: right;
 	margin: 10px;
 	padding: 10px;
+	border-radius: 4px;
 }
 
 #fromName, #fromEmail{
@@ -226,12 +252,34 @@ aside.monthSelector ul{
 	color: red;
 }
 
+.canvasHeader{
+	background-color: #F09F59;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.canvasHeader h1{
+	margin: 0;
+}
+
+.canvasContainer{
+	background-color: #2D2D2E;
+	padding: 10px;
+	width: 800px;
+	margin: 0 auto;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
 #demoCanvas{
 	width: 640px;
 	height: 480px;
-	border: 1px solid #ccc;
-	margin: 0 auto;
+	margin: 10px auto;
 	display: block;
+
 }
 
 .pageFooter{
