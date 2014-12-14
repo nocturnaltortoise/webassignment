@@ -1,31 +1,43 @@
+/* Author: Simon Turner;
+ * Username: aca14st */
+
+/* ==========================================================================
+   Font imports
+   ========================================================================== */
+
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 @import url(http://fonts.googleapis.com/css?family=Oswald:700);
 
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
 .navbar{
 	background-color: #2D2D2E;
-	margin: 0;
 	border-top: 10px solid #1793D0;
-	padding: 1em;
-	clear: both;
+	padding: 10px;
 }
 
 .navbar ul li{
 	list-style-type: none;
-	display: inline;
+	display: inline-block;
+	/*make sure the links are separated by a small amount of space*/
 	padding-right: 5%;
 }
 
+/*pad the whole list of navbar links so they're further away from the edge of the screen*/
 .navbar ul{
 	padding-left: 5%;
+	/*remove the default margins to make the navbar smaller*/
 	margin: 0;
 }
 
 .navbar a{
 	color: #8F9496;
 	text-decoration: none;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-weight: bold;
 	font-family: 'Oswald', sans-serif;
+	/*pad the links based on text size*/
 	padding: 0.75em 0 0.75em 0;
 }
 
@@ -33,28 +45,25 @@
 	color: #fff;
 }
 
+/*highlight the navbar link of the page that the viewer is currently on*/
 a.currentPage{
 	color: #1793D0;
 }
 
 .pageHeader{
 	background-color: #5F5F63;
+	padding-left: 5%;
 }
 
-.logo{
-	display: inline-block;
-	margin-left: 5%;
-}
-
-.logo img{
-	max-width: 50%;
-}
+/* ==========================================================================
+   Main Page Content
+   ========================================================================== */
 
 .content{
 	background-color: #F5F5F5;
 	margin: 50px auto;
 	width: 80%;
-	padding: 10px;
+	padding: 20px;
 	border: 1px solid #ccc;
 	font-family: 'Arvo', serif;
 }
@@ -62,8 +71,6 @@ a.currentPage{
 .content img{
 	border: solid 3px #ccc;
 	margin: 5px;
-	padding: 5px;
-	background-color: #fff;
 }
 
 .content h1{
@@ -71,7 +78,7 @@ a.currentPage{
 	font-size: 2em;
 }
 
-.content li{
+.accessKeys li{
 	list-style: none;
 	margin: 50px 0;
 }
@@ -90,19 +97,24 @@ a.currentPage{
 	color: #F09F59;
 }
 
+/*makes each access key have a background gradient. 
+ *If the browser can't handle linear-gradient, then fallback to a background image*/
 .key{
 	background-image: url(images/gradient.png);
 	background: linear-gradient(left, #1793D0, #106693);
 	background: -moz-linear-gradient(left, #1793D0, #106693);
 	background: -webkit-linear-gradient(left, #1793D0, #106693);
 	background: -o-linear-gradient(left, #1793D0, #106693);
+	background: -ms-linear-gradient(left, #1793D0, #106693);;
 	
 	margin: 50px 0;
 	padding: 10px;
 }
 
+/* Homepage Alignment
+   ========================================================================== */
+
 .threeColumn{
-	padding: 0;
 	text-align: center;
 }
 
@@ -116,8 +128,10 @@ a.currentPage{
 	display: inline-block;
 	padding: 10px;
 	width: 30%;
-	text-align: center;
 }
+
+/* Alignment for content on other pages
+   ========================================================================== */
 
 .singleRow{
 	display: inline-block;
@@ -125,13 +139,14 @@ a.currentPage{
 }
 
 .singleRow p{
-	width: 65%;
+	width: 70%;
 	float: right;
 }
 
 .singleRow img{
 	max-width: 300px;
 	max-height: 200px;
+	width: 25%;
 	clear: left;
 }
 
@@ -146,6 +161,9 @@ a.currentPage{
 	float: right;
 }
 
+/* Individual date styling (news page)
+   ========================================================================== */
+
 .dayAndMonth{
 	background-color: #8F9496;
 	padding: 0.5em;
@@ -158,8 +176,10 @@ a.currentPage{
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 
+/* News sidebar
+   ========================================================================== */
+
 aside.monthSelector{
-	float: right;
 	display: inline-block;
 	background-color: #2D2D2E;
 	margin: 50px 10px 10px 10px; 
@@ -192,20 +212,24 @@ aside.monthSelector ul{
 	padding: 10px;
 }
 
+/* Extra wrapper (for aligning content with the sidebar)
+   ========================================================================== */
+
 #wrapper{
-	margin: 0px auto;
+	margin-left: 50px;
 	width: 95%;
 }
 
 #wrapper .content{
 	float: left;
-	display: inline-block;
 }
 
 #wrapper aside.monthSelector{
 	float: left;
-	display: inline-block;
 }
+
+/* Contact form
+   ========================================================================== */
 
 .contactForm{
 	width: 600px;
@@ -260,6 +284,9 @@ aside.monthSelector ul{
 	color: red;
 }
 
+/* Canvas
+   ========================================================================== */
+
 .canvasHeader{
 	background-color: #F09F59;
 	width: 800px;
@@ -287,9 +314,13 @@ aside.monthSelector ul{
 	height: 480px;
 	margin: 10px auto;
 	display: block;
-	background-color: #fff;
+	background-color: #232361;
 
 }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
 .pageFooter{
 	background-color: #F09F59;
@@ -297,6 +328,7 @@ aside.monthSelector ul{
 	padding: 0 10px 0 10px;
 	margin-top: 50px;
 	font-family: 'Oswald', sans-serif;
+	
 }
 
 .pageFooter ul li{
@@ -312,11 +344,16 @@ aside.monthSelector ul{
 }
 
 .pageFooter a{
-	color: #fff;
 	text-decoration: none;
+	color: #000;
 }
 
+.pageFooter a:hover{
+	color: #fff;
+}
+
+/* Copyright text
+   ========================================================================== */
 .pageFooter li:last-child{
 	float: right;
-	color: #fff;
 }	
