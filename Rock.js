@@ -2,7 +2,7 @@ function Rock(x,y,radius,speed){
 	this.x = x;
 	this.y = y;
 	this.radius = radius;
-	this.speed;
+	this.speed = speed;
 }
 
 Rock.prototype.draw = function(context){
