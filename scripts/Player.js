@@ -1,12 +1,11 @@
-function Player(x,y,width,height,dx,dy){
+function Player(x,y,width,height){
 	this.x = x;
 	this.y = y;
 	this.width = width;
 	this.height = height;
-	this.dx = dx;
-	this.dy = dy;
 }
 
+//draws a rectangle for the player.
 Player.prototype.draw = function(context) {
 	context.beginPath();
 	context.fillStyle = "#FF0000";
@@ -31,14 +30,6 @@ Player.prototype.getHeight = function() {
 	return this.height;
 };
 
-Player.prototype.getDx = function() {
-	return this.dx;
-};
-
-Player.prototype.getDy = function(){
-	return this.dy;
-};
-
 Player.prototype.setX = function(x) {
 	this.x = x;
 };
@@ -53,12 +44,4 @@ Player.prototype.setWidth = function(width) {
 
 Player.prototype.setHeight = function(height) {
 	this.height = height;
-};
-
-Player.prototype.setDx = function(dx) {
-	this.dx = dx;
-};
-
-Player.prototype.setDy = function(dy) {
-	this.dy = dy;
 };

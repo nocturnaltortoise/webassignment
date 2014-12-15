@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<!--[if lt IE 9]>
-    		<script src="html5shiv.js"></script>
+    		<script src="normalizeandshiv/html5shiv.js"></script>
 		<![endif]-->
 		<meta charset="utf-8">
 		<title>Contact | Nocturnal Web Development</title>
-		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="normalizeandshiv/normalize.css">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
 
@@ -38,18 +38,19 @@
 
 				
 				<form name="contactForm" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get">
-				<input type="hidden" name="recipient" value="STurner4@sheffield.ac.uk"/>
-				<label for="fromName">Name: <span class="requiredSymbol">*</span></label>
-				<input type="text" name="fromName" id="fromName" maxlength="40" size="20" placeholder="Enter your name..."required/>
-				<label for="fromEmail">Email: <span class="requiredSymbol">*</span></label>
-				<input type="email" name="fromEmail" id="fromEmail" maxlength="40" size="20" placeholder="Enter your email..."required/>
-				<label for="message">Your Message: <span class="requiredSymbol">*</span></label>
-				<textarea name="message" id="message" placeholder="Enter your message..." required></textarea>
+					<input type="hidden" name="recipient" value="STurner4@sheffield.ac.uk"/>
+					<label for="fromName">Name: <span class="requiredSymbol">*</span></label>
+					<input type="text" name="fromName" id="fromName" maxlength="40" size="20" placeholder="Enter your name..." required/>
+					<label for="fromEmail">Email: <span class="requiredSymbol">*</span></label>
+					<input type="email" name="fromEmail" id="fromEmail" maxlength="40" size="20" placeholder="Enter your email..." required/>
+					<label for="message">Your Message: <span class="requiredSymbol">*</span></label>
+					<textarea name="message" id="message" placeholder="Enter your message..." required></textarea>
 
-				<input type="submit" name="formSubmit" id="formSubmit" value="submit"/>
-				<input type="reset" id="formReset" value="reset"/>
+					<input type="submit" name="formSubmit" id="formSubmit" value="submit"/>
+					<input type="reset" id="formReset" value="reset"/>
 
-				<p><span class="requiredSymbol">*</span> Indicates a required field. </p>
+					<p><span class="requiredSymbol">*</span> Indicates a required field. </p>
+				</form>
 			</div>
 
 		</div>
